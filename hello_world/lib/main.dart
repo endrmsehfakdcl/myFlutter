@@ -1,10 +1,13 @@
 // 가장 기본이 되는 임포트
 import 'package:flutter/material.dart';
+import 'package:hello_world/widgets/column_widget_example.dart';
 import 'package:hello_world/widgets/elevated_button_widget_example.dart';
+import 'package:hello_world/widgets/flexible_widget_example.dart';
 import 'package:hello_world/widgets/floating_action_button_widget_example.dart';
 import 'package:hello_world/widgets/gesture_detector_widget_example.dart';
 import 'package:hello_world/widgets/icon_button_widget_example.dart';
 import 'package:hello_world/widgets/padding_widget_example.dart';
+import 'package:hello_world/widgets/row_widget_example.dart';
 // main
 void main(){
   // run
@@ -23,7 +26,10 @@ class MyApp extends StatelessWidget{
           // child: IconButtonWidgetExample(),
           // child: GestureDetectorWidgetExample(),
           // child: FloatingActionButtonWidgetExample(),
-          child: PaddingWidgetExample(),
+          // child: PaddingWidgetExample(),
+          // child: RowWidgetExample(),
+          // child: ColumnWidgetExample(),
+          child: FlexibleWidgetExample(),
         ),
       ),
     );

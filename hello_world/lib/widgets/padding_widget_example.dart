@@ -1,23 +1,25 @@
 import 'package:flutter/material.dart';
 
 class PaddingWidgetExample extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         body: Center(
           child: Container(
-            decoration: BoxDecoration(
-              color: Colors.orange,
-              border: Border.all(
-                width: 16.0,
-                color: Colors.black54,
+            color: Colors.black26,
+            child: Container(
+              color: Colors.lightGreen,
+              margin: EdgeInsets.all(20.0),
+              child: Padding(
+                padding: EdgeInsets.all(50.0),
+                child: Container(
+                  color: Colors.orange,
+                  width: 100.0,
+                  height: 100.0,
+                ),
               ),
-              borderRadius: BorderRadius.circular(16.0),
             ),
-            height: 200.0,
-            width: 200.0,
           ),
         ),
       ),
